@@ -19,9 +19,12 @@ const worldWonderCards = async () => {
     worldWonders.forEach((worldWonder) => {
     const worldWonderCard = document.createElement("div")
     worldWonderCard.setAttribute("class", "flex column worldWonder-card full-width center solid-border grey-bg")
+    const title = document.createElement("h3")
+    title.setAttribute("class", "bold")
+    title.innerHTML= worldWonder.name
     const image = document.createElement("img");
     image.setAttribute("src", worldWonder.links.images[0])
-    
+    worldWonderCard.appendChild(title)
     worldWonderCard.appendChild(image)
     worldWonderSection.appendChild(worldWonderCard);
     body.appendChild(worldWonderSection)

@@ -23,6 +23,8 @@
 .worldWonder-card{
     width: 60%;
     height:400px;
-    margin: 20px auto
+    margin: 20px auto;
+    justify-content: space-evenly
+    
     
 }
