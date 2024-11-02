@@ -14,13 +14,16 @@ const worldWonderCards = async () => {
     worldWonders = worldWonders.slice(0,10)
     const body = document.body; 
     const worldWonderSection = document.createElement("div");
-    worldWonderSection.setAttribute("class", "worldWonder-section");
+    worldWonderSection.setAttribute("class", "flex wrap worldWonder-section");
 
     worldWonders.forEach((worldWonder) => {
-
+    const worldWonderCard = document.createElement("div")
+    worldWonderCard.setAttribute("class", "flex column worldWonder-card full-width center")
     const image = document.createElement("img");
     image.setAttribute("src", worldWonder.links.images[0])
-    worldWonderSection.appendChild(image);
+    
+    worldWonderCard.appendChild(image)
+    worldWonderSection.appendChild(worldWonderCard);
     body.appendChild(worldWonderSection)
    })
 
