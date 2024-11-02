@@ -18,7 +18,7 @@ const worldWonderCards = async () => {
 
     worldWonders.forEach((worldWonder) => {
     const worldWonderCard = document.createElement("div")
-    worldWonderCard.setAttribute("class", "flex column worldWonder-card full-width center")
+    worldWonderCard.setAttribute("class", "flex column worldWonder-card full-width center solid-border grey-bg")
     const image = document.createElement("img");
     image.setAttribute("src", worldWonder.links.images[0])
     

@@ -29,6 +29,14 @@
   .bold {
     font-weight: bold;
   }
+
+  .solid-border{
+
+    border-style: solid;
+    border-color: rgb(0, 153, 255);
+    border-radius:10px;
+    border-width: 3px;
+  }
   
   .center {
     align-items: center;
