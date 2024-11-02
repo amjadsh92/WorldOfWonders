@@ -28,3 +28,25 @@
     
     
 }
+
+
+.button-section{
+
+    width:70%
+}
+
+.btn{
+
+  border-radius: 20px;
+  background-color: #abc3c8; 
+  color: rgb(45, 42, 42);
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+

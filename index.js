@@ -24,9 +24,41 @@ const worldWonderCards = async () => {
     title.innerHTML= worldWonder.name
     const image = document.createElement("img");
     image.setAttribute("src", worldWonder.links.images[0])
+    const buttonSection = document.createElement("div")
+    buttonSection.setAttribute("class", "button-section flex row wrap space-evenly center")
+    
+    
+    wikiLink = document.createElement("a")
+    wikiLink.setAttribute("href", worldWonder.links.wiki)
+    const wiki = document.createElement("button")
+    wiki.setAttribute("class", "btn")
+    wiki.innerHTML = "wiki"
+    wikiLink.appendChild(wiki)
+    buttonSection.appendChild(wikiLink)
+
+    britannicaLink = document.createElement("a")
+    britannicaLink.setAttribute("href", worldWonder.links.britannica)
+    const britannica = document.createElement("button")
+    britannica.setAttribute("class", "btn")
+    britannica.innerHTML = "britannica"
+    britannicaLink.appendChild(britannica)
+    buttonSection.appendChild(britannicaLink)
+
+    tripLink = document.createElement("a")
+    tripLink.setAttribute("href", worldWonder.links.trip_advisor)
+    const trip = document.createElement("button")
+    trip.setAttribute("class", "btn")
+    trip.innerHTML = "trip advisor"
+    tripLink.appendChild(trip)
+    buttonSection.appendChild(tripLink)
+    //const britannica = document.createElement("button")
+    
+
     worldWonderCard.appendChild(title)
     worldWonderCard.appendChild(image)
+    worldWonderCard.appendChild(buttonSection)
     worldWonderSection.appendChild(worldWonderCard);
+
     body.appendChild(worldWonderSection)
    })
 
