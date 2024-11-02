@@ -12,27 +12,17 @@ const worldWonderCards = async () => {
 
     let worldWonders = await fetchWorldWonders()
     worldWonders = worldWonders.slice(0,10)
-    //console.log(worldWonders)
     const body = document.body; 
-    const wrapper = document.createElement("div");
-    wrapper.setAttribute("class", "wrapper");
+    const worldWonderSection = document.createElement("div");
+    worldWonderSection.setAttribute("class", "worldWonder-section");
 
     worldWonders.forEach((worldWonder) => {
 
     const image = document.createElement("img");
     image.setAttribute("src", worldWonder.links.images[0])
-    wrapper.appendChild(image);
-    body.appendChild(wrapper)
-
-
-
-
-
-        
-
-
-
-    })
+    worldWonderSection.appendChild(image);
+    body.appendChild(worldWonderSection)
+   })
 
 }
 
