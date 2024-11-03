@@ -36,7 +36,7 @@ const worldWonderCards = async () => {
     wikiLink.appendChild(wiki)
     buttonSection.appendChild(wikiLink)
 
-    britannicaLink = document.createElement("a")
+    const britannicaLink = document.createElement("a")
     britannicaLink.setAttribute("href", worldWonder.links.britannica)
     const britannica = document.createElement("button")
     britannica.setAttribute("class", "btn")
@@ -52,6 +52,25 @@ const worldWonderCards = async () => {
     tripLink.appendChild(trip)
     buttonSection.appendChild(tripLink)
     //const britannica = document.createElement("button")
+
+    
+    const details = document.createElement("button")
+    details.addEventListener("click", () => {
+        window.open("details.html", "_blank");
+        localStorage.setItem("worldWonder", JSON.stringify(worldWonder))
+        //localStorage.setItem("worldWonderSummery", worldWonder.summary)
+        //localStorage.setItem("worldWonderLocation", worldWonder.location)
+        //localStorage.setItem("worldWonderBuildyear", worldWonder.build_year)
+        //localStorage.setItem("worldWonderTimeperiod", worldWonder.time_period)
+        //localStorage.setItem("worldWonderImage", worldWonder.links.images[0])
+
+
+    })
+    details.setAttribute("class", "btn")
+    details.innerHTML = "show details"
+   
+    buttonSection.appendChild(details)
+
     
 
     worldWonderCard.appendChild(title)
