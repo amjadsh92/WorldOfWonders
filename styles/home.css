@@ -57,8 +57,29 @@
 
 .page{
 
-    width:70%;
+    width:50%;
+    height: 50%;
+    margin: 40px auto;
+    gap: 80px
+    
+    
+}
+
+.image-page{
+
+    width:50%;
+    height:50%;
     margin: auto
+}
+
+.summary{
+
+    font-style:italic;
+    font-size:15px
+}
+
+.information-section{
+    width:100%
 }
 
 

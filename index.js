@@ -57,6 +57,7 @@ const worldWonderCards = async () => {
     const details = document.createElement("button")
     details.addEventListener("click", () => {
         window.open("details.html", "_blank");
+        
         localStorage.setItem("worldWonder", JSON.stringify(worldWonder))
         //localStorage.setItem("worldWonderSummery", worldWonder.summary)
         //localStorage.setItem("worldWonderLocation", worldWonder.location)
