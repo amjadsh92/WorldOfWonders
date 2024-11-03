@@ -16,12 +16,12 @@
 
 .worldWonder-card > img{
     
-    width:50%;
-    height:50%
+    width:55%;
+    height:40%
 }
 
 .worldWonder-card{
-    width: 60%;
+    width: 45%;
     height:400px;
     margin: 20px auto;
     justify-content: space-evenly
@@ -47,7 +47,9 @@
   font-family: "Lucida Console", "Courier New", monospace;
   margin: 2px 2px;
   cursor: pointer;
+  min-width:120px
 }
+
 
 
 .title{
